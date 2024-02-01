@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <h1>Rent and Purchasing Books</h1>
+    
+    <div id="book-form">
+        <h2>Book Rental</h2>
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" required>
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+
+        <label for="rentDays">Rental Days:</label>
+        <input type="number" id="rentDays" required>
+
+        <button onclick="rentBook()">Rent Book</button>
+    </div>
+
+    <div id="student-details">
+        <h2>Student Details</h2>
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" required>
+
+        <button onclick="displayDetails()">Display Details</button>
+        <div id="detailsOutput"></div>
+    </div>
+
+    <script>
+        function rentBook() {
+            // Use AJAX or fetch API to send data to the backend (Python)
+            // You may use XMLHttpRequest, fetch API, or a library like jQuery or Axios
+            // For simplicity, I'll use alert to simulate the interaction
+            alert("Book rented successfully!");
+        }
+
+        function displayDetails() {
+            // Use AJAX or fetch API to get student details from the backend (Python)
+            // You may use XMLHttpRequest, fetch API, or a library like jQuery or Axios
+            // For simplicity, I'll use alert to simulate the interaction
+            alert("Student details will be displayed here.");
+        }
+    </script>
+</body>
+</html>
+
